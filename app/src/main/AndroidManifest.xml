@@ -15,7 +15,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+            
+            <!--Intent filter to for Deep Link to App Content-->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
