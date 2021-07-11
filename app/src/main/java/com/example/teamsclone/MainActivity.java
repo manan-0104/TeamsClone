@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
         btn_copy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Editable tex=t.getText();
+                Editable tex=t.getText();//get the room name entered by the user
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText("copied string", "www.teamsclonemeet.com/"+tex);
+                ClipData clip = ClipData.newPlainText("copied string", "www.teamsclonemeet.com/"+tex);// copy deep link to clipboard
                 clipboard.setPrimaryClip(clip);
 
-                Toast.makeText(MainActivity.this,"Link copied to clipboard",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Link copied to clipboard",Toast.LENGTH_SHORT).show();//toast messgae
 
             }
         });
@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
             JitsiMeetConferenceOptions options
                     = new JitsiMeetConferenceOptions.Builder()
                     .setRoom(text)
-                    .setFeatureFlag("invite.enabled",false)
+                    .setFeatureFlag("invite.enabled",false)// use of feature flag to modify the features of Jitsi SDK
                     .build();
-            JitsiMeetActivity.launch(this, options);
+            JitsiMeetActivity.launch(this, options);// launch the meet if entered room name has more than zero characters
         }
     }
 
