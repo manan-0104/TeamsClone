@@ -1,9 +1,9 @@
 # TeamsClone
-MS Engage 20201 Project
-References:
-Oracto Tech
-https://developer.android.com/
-https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-android-sdk
+MS Engage 2021 Project 
+References: 
+•	Oracto Tech
+•	 https://developer.android.com/ 
+•	https://jitsi.github.io/handbook/docs/dev-guide/dev-guide-android-sdk
 
 Installation and use:
 -> In an android device, click on the drive link https://drive.google.com/file/d/1qNoWuFWEC9skd8lgnX99RiBsirc1HfsF/view?usp=sharing to install the app from google drive.
