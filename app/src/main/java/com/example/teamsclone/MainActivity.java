@@ -36,13 +36,10 @@ public class MainActivity extends AppCompatActivity {
             JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
                     .setServerURL(new URL(""))
                     .setWelcomePageEnabled(false)
-                    //.setFeatureFlag("invite.enabled",false)
                     .build();
 
             JitsiMeet.setDefaultConferenceOptions(options);
 
-            // JitsiMeetConferenceOptions.Builder builder =   new JitsiMeetConferenceOptions.Builder();
-            //builder.setFeatureFlag("invite.enabled",false);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -69,10 +66,6 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View v) {
         EditText editText = findViewById(R.id.conferenceName);
         String text = editText.getText().toString();
-
-        /*ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-        ClipData clip = ClipData.newPlainText("copied string", "www.jitsiexpmeet.com/"+text);
-        clipboard.setPrimaryClip(clip);*/
 
         if (text.length() > 0) {
             JitsiMeetConferenceOptions options
